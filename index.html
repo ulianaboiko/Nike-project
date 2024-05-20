@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
@@ -15,7 +22,201 @@
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
-    <img src="./src/images/car.svg" alt="" />
-    <img src="./src/images/paint.svg" alt="" />
+    <header class="header">
+      <div class="container">
+        <a href="#" class="header-logo"
+          ><img src="./src/images/logo.png" alt="лого" class="header-logo-foto"
+        /></a>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Main page</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Benefits</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Advantages</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Order</a></li>
+          </ul>
+        </nav>
+        <div class="header-action">
+          <a href="#" class="action-link">Ua</a>
+          <a href="#" class="action-link">Eng</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <a class="hero-logo"
+            ><img src="./src/images/logo.png" alt="лого" class="hero-logo-foto"
+          /></a>
+          <h1 class="hero-under-logo">С&R</h1>
+          <h2 class="hero-title">ColoRawe</h2>
+          <h3 class="hero-subtitle">Your dream Nike</h3>
+          <p class="hero-text">
+            On this site you can find custom Nike sneakers of your dreams. The
+            original company caт`t create such beautiful sneakers as we do. Good
+            luck finding your way in the world of custom sneakers.
+          </p>
+          <a href="#" class="hero-link">Buy my Nike</a>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="container">
+          <ul class="benefits-list">
+            <li class="benefit-item">
+              <h4 class="benefit-title">Premium Quality</h4>
+              <img
+                src="./src/images/stars.svg"
+                alt="зірки"
+                class="benefit-foto"
+              />
+            </li>
+            <li class="benefit-item">
+              <h4 class="benefit-title">Indelible paint</h4>
+              <img
+                src="./src/images/paint.svg"
+                alt="фарба"
+                class="benefit-foto"
+              />
+            </li>
+            <li class="benefit-item">
+              <h4 class="benefit-title">Fast shipping</h4>
+              <img
+                src="./src/images/car.svg"
+                alt="машина"
+                class="benefit-foto"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h3 class="reviews-title">Reviews</h3>
+          <ul class="reviews-list">
+            <!--------1------->
+            <li class="reviews-item">
+              <article class="reviews-card">
+                <div class="card-top">
+                  <p class="card-opinion">
+                    Sneakers are very comfortable and well painted, nothing has
+                    worn off in a year.
+                  </p>
+                  <p class="card-date">25.11</p>
+                </div>
+                <div class="card-contact">
+                  <img
+                    src="./src/images/review1.jpg"
+                    alt="John Teylor"
+                    class="card-foto"
+                  />
+                  <h5 class="card-name">John Teylor</h5>
+                  <p class="card-status">With us from 2018</p>
+                </div>
+              </article>
+            </li>
+            <!--------2------->
+            <li class="reviews-item">
+              <article class="reviews-card">
+                <div class="card-top">
+                  <p class="card-opinion">
+                    I'm very happy with this color scheme. They match all my
+                    clothes.
+                  </p>
+                  <p class="card-date">05.01</p>
+                </div>
+                <div class="card-contact">
+                  <img
+                    src="./src/images/review2.jpg"
+                    alt="Elizabeth Garsia"
+                    class="card-foto"
+                  />
+                  <h5 class="card-name">Elizabeth Garsia</h5>
+                  <p class="card-status">With us from 2020</p>
+                </div>
+              </article>
+            </li>
+            <!--------3------->
+            <li class="reviews-item">
+              <article class="reviews-card">
+                <div class="card-top">
+                  <p class="card-opinion">
+                    Just right if you need to go to a party. I use them
+                    actively, the paint is super.
+                  </p>
+                  <p class="card-date">18.06</p>
+                </div>
+                <div class="card-contact">
+                  <img
+                    src="./src/images/review3.jpg"
+                    alt="Tom Maquare"
+                    class="card-foto"
+                  />
+                  <h5 class="card-name">Tom Maquare</h5>
+                  <p class="card-status">With us from 2019</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="order">
+        <div class="container">
+          <h3 class="order-title">Order</h3>
+          <form action="#" class="order-form">
+            <input
+              type="email"
+              class="form-item"
+              placeholder="Write your email"
+            />
+            <button class="order-button">Confirm</button>
+            <input type="text" class="form-item" placeholder="Your Country" />
+            <input type="text" class="form-item" placeholder="Your City" />
+            <input type="text" class="form-item" placeholder="Your Adress" />
+            <button class="form-button">Order my Nike</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-questions-list">
+          <li class="questions-item">Have a question?</li>
+          <li class="questions-item">Have a proposal for cooperation?</li>
+          <li class="questions-item">Advertising questions?</li>
+        </ul>
+        <ul class="footer-answers-list">
+          <li class="answers-item">
+            <a href="mailto:ColoRawe_support@gmail.com" class="answers-link"
+              >ColoRawe_support@gmail.com</a
+            >
+          </li>
+          <li class="answers-item">
+            <a href="mailto:ColoRawe_Cooperation@gmail.com" class="answers-link"
+              >ColoRawe_Cooperation@gmail.com</a
+            >
+          </li>
+          <li class="answers-item">
+            <a href="mailto:ColoRawe_Advertising@gmail.com" class="answers-link"
+              >ColoRawe_Advertising@gmail.com</a
+            >
+          </li>
+        </ul>
+        <ul class="footer-info-list">
+          <li class="info-item">2022 ColoRawe @All rights reserved</li>
+          <li class="info-item">United States</li>
+        </ul>
+        <div class="footer-logo">
+          <img
+            src="./src/images/logo.png"
+            alt="лого"
+            class="footer-logo-foto"
+          />
+          <h4 class="footer-under-logo">С&R</h4>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
