@@ -3,12 +3,37 @@
   --colorTextSecondary: #d8d8d8;
   --colorTextAdditional: #c7c7c7;
   --colorTextOrder: #959595;
+  --colorBackgroundPrimary: #021635;
+  --colorBackgroundSecondary: #012d63;
+  --colorButton: #8e32c6;
 }
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: var(--colorTextPrimary);
+  background-color: var(--colorBackgroundPrimary);
+}
+.container {
+  max-width: 1130px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+header {
+  padding-top: 15px;
+  background-color: var(--colorBackgroundSecondary);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 .nav-link {
   font-weight: 300;
@@ -18,9 +43,14 @@ body {
   font-weight: 400;
   color: var(--colorTextPrimary);
 }
-.header-action:first-child {
+.action-link:first-child {
   font-weight: 300;
   color: #dcdcdc;
+}
+/* -------------------------------------------main------------------------------ */
+.hero {
+  padding-top: 95px;
+  padding-bottom: 185px;
 }
 .hero-under-logo {
   font-family: "PT Serif", serif;
@@ -33,23 +63,60 @@ body {
 .hero-subtitle {
   font-family: "Playfair Display", serif;
   font-size: 72px;
+  margin-bottom: 15px;
 }
 .hero-text {
+  margin-bottom: 40px;
   font-size: 18px;
+  width: 508px;
 }
+.hero-link {
+  background-color: var(--colorButton);
+  padding: 20px 60px;
+  border-radius: 10px;
+}
+.benefits {
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+.benefits-list {
+  display: flex;
+  align-items: center;
+  gap: 145px;
+  border: 3px solid var(--colorButton);
+  padding: 25px 50px;
+}
+
 .benefit-title {
   font-family: "Playfair Display", serif;
   font-size: 36px;
   text-align: center;
 }
+.reviews {
+  padding-bottom: 110px;
+}
 .reviews-title {
   font-family: "Playfair Display", serif;
   font-size: 48px;
   text-align: center;
+  margin-bottom: 25px;
+}
+.reviews-list {
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+.reviews-card {
+  padding: 50px 15px 30px 15px;
+  border-radius: 15px;
+}
+.card-opinion {
+  margin-bottom: 8px;
 }
 .card-date {
   font-size: 14px;
   color: var(--colorTextSecondary);
+  margin-bottom: 47px;
 }
 .card-name {
   font-size: 14px;
@@ -58,8 +125,13 @@ body {
   font-size: 12px;
   color: var(--colorTextSecondary);
 }
+.order {
+  padding-bottom: 40px;
+  background-color: var(--colorBackgroundSecondary);
+}
 .order-title {
   font-family: "Playfair Display", serif;
+  text-align: center;
   font-size: 48px;
 }
 .form-item {
@@ -68,6 +140,10 @@ body {
 .order-button {
   font-size: 28px;
   color: var(--colorTextSecondary);
+}
+.footer {
+  padding-top: 45px;
+  padding-bottom: 50px;
 }
 .answers-item {
   font-size: 24px;
