@@ -30,6 +30,10 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.header-logo-foto {
+  width: 100px;
+  height: 60px;
+}
 .nav-list {
   display: flex;
   align-items: center;
@@ -51,6 +55,19 @@ header {
 .hero {
   padding-top: 95px;
   padding-bottom: 185px;
+  background-image: url(../images/bghero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-logo-unl {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.hero-logo-foto {
+  width: 160px;
+  height: 120px;
 }
 .hero-under-logo {
   font-family: "PT Serif", serif;
@@ -59,6 +76,7 @@ header {
 .hero-title {
   font-family: "Playfair Display", serif;
   font-size: 144px;
+  margin-bottom: 7px;
 }
 .hero-subtitle {
   font-family: "Playfair Display", serif;
@@ -69,6 +87,7 @@ header {
   margin-bottom: 40px;
   font-size: 18px;
   width: 508px;
+  margin-bottom: 60px;
 }
 .hero-link {
   background-color: var(--colorButton);
@@ -78,6 +97,7 @@ header {
 .benefits {
   padding-top: 105px;
   padding-bottom: 105px;
+  background-image: radial-gradient(at top left #8e32c6);
 }
 .benefits-list {
   display: flex;
@@ -86,14 +106,24 @@ header {
   border: 3px solid var(--colorButton);
   padding: 25px 50px;
 }
-
+.benefit-item::after {
+  content: "";
+  width: 346px;
+  height: 1px;
+  background-color: var(--colorTextPrimary);
+}
 .benefit-title {
   font-family: "Playfair Display", serif;
   font-size: 36px;
   text-align: center;
+  margin-bottom: 5px;
 }
 .reviews {
   padding-bottom: 110px;
+   background-image: url(../images/flowers.webp); 
+  background-repeat: no-repeat;
+  background-size: 340px
+  background-position: left bottom;
 }
 .reviews-title {
   font-family: "Playfair Display", serif;
@@ -104,7 +134,24 @@ header {
 .reviews-list {
   display: flex;
   align-items: center;
-  gap: 95px;
+  justify-content: space-between;
+}
+.reviews-item{
+  width: 255px;
+  height: 292px;
+  border-radius: 15px;
+}
+.reviews-item:nth-child(1){
+  box-shadow: 0 30px 0 -13px #533978, 0 14px 0 -5px #7b54b2;
+  background: linear-gradient(135deg, #00e5e6 7.29%, #00a8f7 26.04%, #9a76f9 62.5%, #cc5ec2 100%);
+}
+.reviews-item:nth-child(2){
+  box-shadow: 0 30px 0 -13px #61337c, 0 14px 0 -5px #9159b1;
+background: linear-gradient(135deg, #ff68b4 0%, #ff45e1 26.04%, #ce3aff 62.84%, #8961ff 100%);
+}
+.reviews-item:nth-child(3){
+  box-shadow: 0 30px 0 -13px #732f26, 0 14px 0 -5px #b95a4c;
+background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, #ff5489 100%);
 }
 .reviews-card {
   padding: 50px 15px 30px 15px;
@@ -117,6 +164,19 @@ header {
   font-size: 14px;
   color: var(--colorTextSecondary);
   margin-bottom: 47px;
+}
+.card-contact{
+  display: flex;
+}
+.card-foto{
+  width: 31px;
+  height: 31px;
+}
+.card-t-p{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
 }
 .card-name {
   font-size: 14px;
@@ -134,24 +194,92 @@ header {
   text-align: center;
   font-size: 48px;
 }
+.order-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 .form-item {
   color: var(--colorTextOrder);
+  padding-left: 24px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-radius: 50px;
+  width: 580px;
+  height: 50px;
+}
+.form-item:hover {
+  font-size: 28px;
+  width: 690px;
+  height: 60px;
 }
 .order-button {
   font-size: 28px;
   color: var(--colorTextSecondary);
+  width: 250px;
+  height: 50px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.form-button {
+  border-radius: 16px;
+  background-color: var(--colorButton);
+  padding: 20px 50px;
 }
 .footer {
   padding-top: 45px;
   padding-bottom: 50px;
+}
+.footer-q-a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.footer-i-logo::before{
+  content: "";
+  width: 1110px;
+  height: 0px;
+  border: 1px solid #9b9b9b;
+
+}
+.footer-questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-answers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .answers-item {
   font-size: 24px;
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
+.footer-i-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
 .info-item {
   font-size: 18px;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-logo-foto {
+  width: 108px;
+  height: 81px;
 }
 .footer-under-logo {
   font-family: "PT Serif", serif;
