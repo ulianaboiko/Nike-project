@@ -24,6 +24,7 @@ body {
 header {
   padding-top: 15px;
   background-color: var(--colorBackgroundSecondary);
+  padding-bottom: 30px;
 }
 .header-container {
   display: flex;
@@ -68,6 +69,7 @@ header {
 .hero-logo-foto {
   width: 160px;
   height: 120px;
+  margin-bottom: -30px;
 }
 .hero-under-logo {
   font-family: "PT Serif", serif;
@@ -90,6 +92,8 @@ header {
   margin-bottom: 60px;
 }
 .hero-link {
+  display: block;
+  width: 255px;
   background-color: var(--colorButton);
   padding: 20px 60px;
   border-radius: 10px;
@@ -97,20 +101,21 @@ header {
 .benefits {
   padding-top: 105px;
   padding-bottom: 105px;
-  background-image: radial-gradient(at top left #8e32c6);
+  background-image: radial-gradient(circle at left top, #8630be, #02163505 30%),
+    radial-gradient(circle at right bottom, #01a9ca, #021635 30%);
 }
 .benefits-list {
   display: flex;
   align-items: center;
-  gap: 145px;
+  gap: 50px;
   border: 3px solid var(--colorButton);
   padding: 25px 50px;
 }
-.benefit-item::after {
-  content: "";
-  width: 346px;
-  height: 1px;
-  background-color: var(--colorTextPrimary);
+.benefit-item:nth-child(2) {
+  padding-left: 95px;
+  padding-right: 95px;
+  border-left: 1px solid var(--colorTextPrimary);
+  border-right: 1px solid var(--colorTextPrimary);
 }
 .benefit-title {
   font-family: "Playfair Display", serif;
@@ -119,11 +124,19 @@ header {
   margin-bottom: 5px;
 }
 .reviews {
+  padding-top: 25px;
   padding-bottom: 110px;
-   background-image: url(../images/flowers.webp); 
+  background-image: radial-gradient(
+      circle at right bottom,
+      #01a9ca,
+      #02163500 25%
+    ),
+    url(../images/flowers.webp);
   background-repeat: no-repeat;
-  background-size: 340px
-  background-position: left bottom;
+  background-size: contain, 225px 380px;
+  background-position: right bottom, left bottom;
+  border-top: 1px solid var(--colorTextPrimary);
+  border-bottom: 1px solid var(--colorTextPrimary);
 }
 .reviews-title {
   font-family: "Playfair Display", serif;
@@ -133,50 +146,73 @@ header {
 }
 .reviews-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  gap: 95px;
+  flex-basis: calc((100% - 190px) / 3);
 }
-.reviews-item{
+.reviews-item {
   width: 255px;
-  height: 292px;
   border-radius: 15px;
 }
-.reviews-item:nth-child(1){
-  box-shadow: 0 30px 0 -13px #533978, 0 14px 0 -5px #7b54b2;
-  background: linear-gradient(135deg, #00e5e6 7.29%, #00a8f7 26.04%, #9a76f9 62.5%, #cc5ec2 100%);
+.reviews-item:nth-child(1) {
+  box-shadow: 0 14px 0 -5px #7b54b2, 0 30px 0 -13px #533978;
+  background: linear-gradient(
+    135deg,
+    #00e5e6 7.29%,
+    #00a8f7 26.04%,
+    #9a76f9 62.5%,
+    #cc5ec2 100%
+  );
 }
-.reviews-item:nth-child(2){
-  box-shadow: 0 30px 0 -13px #61337c, 0 14px 0 -5px #9159b1;
-background: linear-gradient(135deg, #ff68b4 0%, #ff45e1 26.04%, #ce3aff 62.84%, #8961ff 100%);
+.reviews-item:nth-child(2) {
+  box-shadow: 0 14px 0 -5px #9159b1, 0 30px 0 -13px #61337c;
+  background: linear-gradient(
+    135deg,
+    #ff68b4 0%,
+    #ff45e1 26.04%,
+    #ce3aff 62.84%,
+    #8961ff 100%
+  );
 }
-.reviews-item:nth-child(3){
-  box-shadow: 0 30px 0 -13px #732f26, 0 14px 0 -5px #b95a4c;
-background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, #ff5489 100%);
+.reviews-item:nth-child(3) {
+  box-shadow: 0 14px 0 -5px #b95a4c, 0 30px 0 -13px #732f26;
+  background: linear-gradient(
+    135deg,
+    #ffe128 0%,
+    #ff9b5c 30.21%,
+    #ff8381 63.29%,
+    #ff5489 100%
+  );
 }
 .reviews-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   padding: 50px 15px 30px 15px;
   border-radius: 15px;
+  gap: 45px;
 }
-.card-opinion {
-  margin-bottom: 8px;
+.card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
 }
 .card-date {
   font-size: 14px;
   color: var(--colorTextSecondary);
-  margin-bottom: 47px;
 }
-.card-contact{
+.card-contact {
   display: flex;
+  gap: 5px;
 }
-.card-foto{
+.card-foto {
   width: 31px;
   height: 31px;
 }
-.card-t-p{
+.card-t-p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 30px;
 }
 .card-name {
   font-size: 14px;
@@ -186,6 +222,7 @@ background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, 
   color: var(--colorTextSecondary);
 }
 .order {
+  padding-top: 20px;
   padding-bottom: 40px;
   background-color: var(--colorBackgroundSecondary);
 }
@@ -193,12 +230,22 @@ background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, 
   font-family: "Playfair Display", serif;
   text-align: center;
   font-size: 48px;
+  margin-bottom: 33px;
 }
 .order-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+.order-i-b {
+  color: var(--colorTextOrder);
+  padding-left: 24px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-radius: 50px;
+  width: 580px;
+  height: 50px;
 }
 .form-item {
   color: var(--colorTextOrder);
@@ -226,6 +273,7 @@ background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, 
   border-radius: 16px;
   background-color: var(--colorButton);
   padding: 20px 50px;
+  color: var(--colorTextPrimary);
 }
 .footer {
   padding-top: 45px;
@@ -236,13 +284,6 @@ background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, 
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
-}
-.footer-i-logo::before{
-  content: "";
-  width: 1110px;
-  height: 0px;
-  border: 1px solid #9b9b9b;
-
 }
 .footer-questions-list {
   display: flex;
@@ -272,6 +313,10 @@ background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, 
 .info-item {
   font-size: 18px;
 }
+.footer-i-logo {
+  padding-top: 5px;
+  border-top: 1px solid var(--colorTextPrimary);
+}
 .footer-logo {
   display: flex;
   align-items: center;
@@ -280,6 +325,7 @@ background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, 
 .footer-logo-foto {
   width: 108px;
   height: 81px;
+  margin-bottom: -17px;
 }
 .footer-under-logo {
   font-family: "PT Serif", serif;
