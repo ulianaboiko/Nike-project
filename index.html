@@ -47,8 +47,8 @@
     </header>
     <main class="main">
       <section class="hero">
-        <div class="container">
-          <div class="hero-logo-unl">
+        <div class="container hero-container">
+          <div class="hero-logo-underlogo">
             <a class="hero-logo"
               ><img
                 src="./src/images/logo.png"
@@ -124,7 +124,7 @@
                     alt="John Teylor"
                     class="card-foto"
                   />
-                  <div class="card-t-p">
+                  <div class="contact-namestatus">
                     <h3 class="card-name">John Teylor</h3>
                     <p class="card-status">With us from 2018</p>
                   </div>
@@ -147,7 +147,7 @@
                     alt="Elizabeth Garsia"
                     class="card-foto"
                   />
-                  <div class="card-t-p">
+                  <div class="contact-namestatus">
                     <h3 class="card-name">Elizabeth Garsia</h3>
                     <p class="card-status">With us from 2020</p>
                   </div>
@@ -170,7 +170,7 @@
                     alt="Tom Maquare"
                     class="card-foto"
                   />
-                  <div class="card-t-p">
+                  <div class="contact-namestatus">
                     <h3 class="card-name">Tom Maquare</h3>
                     <p class="card-status">With us from 2019</p>
                   </div>
@@ -184,17 +184,37 @@
         <div class="container">
           <h2 class="order-title">Order</h2>
           <form action="#" class="order-form">
-            <div class="order-i-b">
+            <div class="order-inputbutton">
+              <!-- <label hidden for="email" class="form-label">Your email</label> -->
               <input
                 type="email"
                 class="form-item"
+                id="email"
                 placeholder="Write your email"
               />
               <button class="order-button">Confirm</button>
             </div>
-            <input type="text" class="form-item" placeholder="Your Country" />
-            <input type="text" class="form-item" placeholder="Your City" />
-            <input type="text" class="form-item" placeholder="Your Adress" />
+            <label hidden for="country" class="form-label">Your country</label>
+            <input
+              type="text"
+              class="form-item"
+              id="country"
+              placeholder="Your Country"
+            />
+            <label hidden for="city" class="form-label">Your city</label>
+            <input
+              type="text"
+              class="form-item"
+              id="city"
+              placeholder="Your City"
+            />
+            <label hidden for="adress" class="form-label">Your adress</label>
+            <input
+              type="text"
+              class="form-item"
+              id="adress"
+              placeholder="Your Adress"
+            />
             <button class="form-button">Order my Nike</button>
           </form>
         </div>

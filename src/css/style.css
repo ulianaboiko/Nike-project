@@ -24,7 +24,7 @@ body {
 header {
   padding-top: 15px;
   background-color: var(--colorBackgroundSecondary);
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .header-container {
   display: flex;
@@ -61,7 +61,7 @@ header {
   background-size: cover;
   background-position: center;
 }
-.hero-logo-unl {
+.hero-logo-underlogo {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -74,6 +74,7 @@ header {
 .hero-under-logo {
   font-family: "PT Serif", serif;
   font-size: 48px;
+  padding-left: 30px;
 }
 .hero-title {
   font-family: "Playfair Display", serif;
@@ -97,6 +98,10 @@ header {
   background-color: var(--colorButton);
   padding: 20px 60px;
   border-radius: 10px;
+}
+.hero-link:hover,
+.form-button:hover {
+  opacity: 0.7;
 }
 .benefits {
   padding-top: 105px;
@@ -148,6 +153,8 @@ header {
   display: flex;
   gap: 95px;
   flex-basis: calc((100% - 190px) / 3);
+  padding-right: 80px;
+  padding-left: 80px;
 }
 .reviews-item {
   width: 255px;
@@ -209,7 +216,7 @@ header {
   width: 31px;
   height: 31px;
 }
-.card-t-p {
+.contact-namestatus {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -221,10 +228,14 @@ header {
   font-size: 12px;
   color: var(--colorTextSecondary);
 }
+/* -------------------ORDER------------------------- */
 .order {
   padding-top: 20px;
   padding-bottom: 40px;
   background-color: var(--colorBackgroundSecondary);
+  background-image: url(../images/bgorder.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .order-title {
   font-family: "Playfair Display", serif;
@@ -238,36 +249,37 @@ header {
   align-items: center;
   gap: 20px;
 }
-.order-i-b {
+.order-inputbutton {
   color: var(--colorTextOrder);
-  padding-left: 24px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 13px;
+  padding-right: 80px;
+  padding-bottom: 13px;
+  padding-left: 25px;
   border-radius: 50px;
-  width: 580px;
-  height: 50px;
-}
-.form-item {
-  color: var(--colorTextOrder);
-  padding-left: 24px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  border-radius: 50px;
-  width: 580px;
-  height: 50px;
-}
-.form-item:hover {
-  font-size: 28px;
   width: 690px;
   height: 60px;
+  background-color: var(--colorTextPrimary);
+  display: flex;
+  align-items: center;
+  gap: 280px;
+}
+.form-item:first-child {
+  width: 205px;
+  font-size: 28px;
+}
+.form-item:nth-child(n + 2) {
+  color: var(--colorTextOrder);
+  padding-left: 24px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-radius: 50px;
+  width: 580px;
+  height: 50px;
 }
 .order-button {
   font-size: 28px;
   color: var(--colorTextSecondary);
-  width: 250px;
-  height: 50px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  background-color: var(--colorTextPrimary);
 }
 .form-button {
   border-radius: 16px;
@@ -312,6 +324,10 @@ header {
 }
 .info-item {
   font-size: 18px;
+}
+.questions-link:hover,
+.answers-link:hover {
+  opacity: 0.8;
 }
 .footer-i-logo {
   padding-top: 5px;

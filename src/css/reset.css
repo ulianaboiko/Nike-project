@@ -101,4 +101,5 @@ h6 {
 button,
 input {
   border: none;
+  padding: 0;
 }
