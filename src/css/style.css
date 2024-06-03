@@ -236,6 +236,7 @@ header {
   background-image: url(../images/bgorder.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .order-title {
   font-family: "Playfair Display", serif;
