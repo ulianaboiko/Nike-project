@@ -53,6 +53,7 @@ header {
   color: #dcdcdc;
 }
 /* -------------------------------------------main------------------------------ */
+/* ------------------------------hero------------------------------ */
 .hero {
   padding-top: 95px;
   padding-bottom: 185px;
@@ -93,8 +94,7 @@ header {
   margin-bottom: 60px;
 }
 .hero-link {
-  display: block;
-  width: 255px;
+  display: inline-block;
   background-color: var(--colorButton);
   padding: 20px 60px;
   border-radius: 10px;
@@ -103,6 +103,7 @@ header {
 .form-button:hover {
   opacity: 0.7;
 }
+/* -------------------------------------benefits---------------------- */
 .benefits {
   padding-top: 105px;
   padding-bottom: 105px;
@@ -128,6 +129,7 @@ header {
   text-align: center;
   margin-bottom: 5px;
 }
+/* -------------------------------------------------------reviews---------------------------- */
 .reviews {
   padding-top: 25px;
   padding-bottom: 110px;
@@ -152,13 +154,13 @@ header {
 .reviews-list {
   display: flex;
   gap: 95px;
-  flex-basis: calc((100% - 190px) / 3);
   padding-right: 80px;
   padding-left: 80px;
 }
 .reviews-item {
   width: 255px;
   border-radius: 15px;
+  flex-basis: calc((100% - 190px) / 3);
 }
 .reviews-item:nth-child(1) {
   box-shadow: 0 14px 0 -5px #7b54b2, 0 30px 0 -13px #533978;
@@ -228,7 +230,7 @@ header {
   font-size: 12px;
   color: var(--colorTextSecondary);
 }
-/* -------------------ORDER------------------------- */
+/* -------------------------------------------------ORDER--------------------------------------- */
 .order {
   padding-top: 20px;
   padding-bottom: 40px;
@@ -288,6 +290,7 @@ header {
   padding: 20px 50px;
   color: var(--colorTextPrimary);
 }
+/* ------------------------------------------------footer--------------------------------- */
 .footer {
   padding-top: 45px;
   padding-bottom: 50px;
