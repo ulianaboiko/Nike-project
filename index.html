@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nike</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -114,7 +115,7 @@
           <h2 class="reviews-title">Reviews</h2>
           <ul class="reviews-list">
             <!--------1------->
-            <li class="reviews-item">
+            <li class="reviews-item" data-aos="fade-right">
               <article class="reviews-card">
                 <div class="card-top">
                   <p class="card-opinion">
@@ -137,7 +138,11 @@
               </article>
             </li>
             <!--------2------->
-            <li class="reviews-item">
+            <li
+              class="reviews-item"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
               <article class="reviews-card">
                 <div class="card-top">
                   <p class="card-opinion">
@@ -160,7 +165,7 @@
               </article>
             </li>
             <!--------3------->
-            <li class="reviews-item">
+            <li class="reviews-item" data-aos="fade-left">
               <article class="reviews-card">
                 <div class="card-top">
                   <p class="card-opinion">
@@ -281,5 +286,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
